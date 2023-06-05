@@ -1,0 +1,96 @@
+/* .nav-link{
+    font-size: 20px;
+    color: red;
+}
+.nav-link:hover{
+    color: darkred;
+} */
+
+#navmenu ul li a::after{
+  content: '';
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  display: block;
+  background: red;
+  transition: .5s;
+  transform-origin: top left;
+}
+
+#navmenu ul li a:hover::after{
+  transform: scaleX(1);
+}
+
+#navmenu ul li a.active::after{
+  transform: scaleX(1);
+}
+.fs-1  {
+  color: red;
+}
+.d-block{
+  color: black;
+}
+.card-body{
+  background-color: pink;
+  border: none;
+  justify-content: space-between;
+}
+.card-title span{
+  margin-left: 100px;
+}
+.bg-white{
+  background-color: white;
+  border-radius: 10px;
+}
+.life-1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  }
+  .mon{
+  display: flex;
+  flex-direction: row;
+  }
+  .mon img{
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  }
+  .mon-1{
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  }
+  .wert{
+  font-size: 15px;
+  font-weight: 500;
+  }
+  .card{
+    /* background-color: white; */
+    border: none;
+  }
+  .card-body{
+    /* background-color: red; */
+    border-radius: 10px;
+  }
+  .get{
+    justify-content: flex-end;
+    margin-left: 200px;
+  }
+
+
+.mess{
+font-size: 30px;
+display: flex;
+margin-right: 10px;
+flex-direction: row;
+justify-content: space-between;
+width: 350px;
+margin-top: 5px;
+}
+ 
